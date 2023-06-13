@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded', (event) => {
+                let buttons = document.querySelectorAll('button');
+                for (let i = 0; i < buttons.length; i++) {
+                    let button = buttons[i];
+                    button.onclick = function() {
+                        if (button.innerHTML == 'The war between Britain and Zanzibar') {
+                            let indicator = document.querySelector('#multiple-indicator');
+                            button.style.backgroundColor = 'green';
+                            button.style.color = 'white';
+                            indicator.style.color = 'green';
+                            indicator.style.visibility = 'visible';
+                            indicator.innerHTML = 'Correct!';
+                        } else if (button.innerHTML == 'Check Answer') {
+                            let indicator = document.querySelector('#free-indicator');
+                            let input = document.querySelector('input');
+                            if (input.value.toLocaleLowerCase() == 'mexico') {
+                                input.style.backgroundColor = 'green';
+                                indicator.style.color = 'green';
+                                indicator.style.visibility = 'visible';
+                                indicator.innerHTML = 'Correct!';
+                            } else {
+                                input.style.backgroundColor = 'red';
+                                indicator.style.color = 'red';
+                                indicator.style.visibility = 'visible';
+                                indicator.innerHTML = 'Incorrect!';
+                            }
+                        } else {
+                            let indicator = document.querySelector('#multiple-indicator');
+                            button.style.backgroundColor = 'red';
+                            button.style.color = 'white';
+                            indicator.style.color = 'red';
+                            indicator.style.visibility = 'visible';
+                            indicator.innerHTML = 'Incorrect!';
+                        }
+                    }
+                }
+
+            });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>What was the shortest war in history?</h3>
+                <p id="multiple-indicator"></p>
+                <button>World War I</button>
+                <button>The Gulf War</button>
+                <button>The war between Britain and Zanzibar</button>
+                <button>The Vietnam War</button>
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>Where is the world's largest pyramid located?</h3>
+                <p id="free-indicator"></p>
+                <input type="text">
+                <button>Check Answer</button>
+            </div>
+        </div>
+    </body>
+</html>

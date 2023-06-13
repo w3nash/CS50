@@ -1,0 +1,2 @@
+By looking at the average energy, valence, and danceability person’s top 100 songs.
+I think the way they are doing it is just fine, I really don't have idea.

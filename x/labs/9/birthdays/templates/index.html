@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="/static/styles.css" rel="stylesheet">
+        <title>Birthdays</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Birthdays</h1>
+        </div>
+        <div class="container">
+            <div class="section">
+
+                <h2>Add a Birthday</h2>
+                <!-- TODO: Create a form for users to submit a name, a month, and a day -->
+                <form action="/" method="post">
+                    <div class="input-group">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" autocomplete="off" autofocus required>
+                    </div>
+                    <div class="input-group">
+                        <label for="month">Month:</label>
+                        <input type="number" min="1" max="12" name="month" autocomplete="off" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="day">Day:</label>
+                        <input type="number" min="1" max="31" name="day" autocomplete="off" required>
+                    </div>
+                    <input type="submit" value="Add Birthday">
+                </form>
+            </div>
+
+            <div class="section">
+
+                <h2>All Birthdays</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Birthday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- TODO: Loop through the database entries to display them in this table -->
+                        {% for birthday in birthdays %}
+                            <tr>
+                                <td>{{ birthday.name }}</td>
+                                <td>{{ birthday.month }}</td>
+                                <td>{{ birthday.day }}</td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+    <script>
+        let name = document.querySelector('input[name="name"]');
+        name.addEventListener('keyup', event => {
+            if (name.value.length >= 1) {
+                name.style.borderColor = "green";
+            } else {
+                name.style.borderColor = "red";
+            }
+        })
+        let month = document.querySelector('input[name="month"]');
+        month.addEventListener('keyup', event => {
+            if (parseInt(month.value) >= 1 && parseInt(month.value) <= 12) {
+                month.style.borderColor = "green";
+            } else {
+                month.style.borderColor = "red";
+            }
+        })
+        let day = document.querySelector('input[name="day"]');
+        day.addEventListener('keyup', event => {
+            if (parseInt(day.value) >= 1 && parseInt(day.value) <= 31) {
+                day.style.borderColor = "green";
+            } else {
+                day.style.borderColor = "red";
+            }
+        })
+    </script>
+</html>
