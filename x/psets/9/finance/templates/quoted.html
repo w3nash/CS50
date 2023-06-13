@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <form action="/quote" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="symbol" name="symbol" placeholder="Symbol" type="text" required value="{{ info['symbol'] }}">
+        </div>
+        <button class="btn btn-primary" type="submit">Quote</button>
+    </form>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    {% for key in info %}
+                        <th scope="col">{{ key.upper() }}</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    {% for key in info %}
+                        {% if key == "price" %}
+                        <td>{{ info[key] | usd }}</td>
+                        {% else %}
+                        <td>{{ info[key] }}</td>
+                        {% endif %}
+                    {% endfor %}
+                </tr>
+            </tbody>
+        </table>
+{% endblock %}

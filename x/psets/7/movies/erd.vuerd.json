@@ -1,0 +1,564 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": 0,
+    "scrollLeft": 0,
+    "zoomLevel": 1,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "stars",
+        "comment": "",
+        "columns": [
+          {
+            "id": "e981ff1e-7808-4c38-8940-104c0327e293",
+            "name": "movie_id",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "dfc5cb77-213b-4f7c-9e2e-a41c807df88e",
+            "name": "person_id",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 62,
+          "top": 45,
+          "zIndex": 2,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "ff431c49-100d-4a5a-ab48-a378e34c8cc4"
+      },
+      {
+        "name": "directors",
+        "comment": "",
+        "columns": [
+          {
+            "id": "60f95a8b-f5e3-4c34-b4ef-8b9ca843b7c2",
+            "name": "movie_id",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "529bd3c0-2332-4341-a4ff-3272b74a2a67",
+            "name": "person_id",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 509,
+          "top": 257,
+          "zIndex": 3,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "0202743f-0c63-4206-8854-3997a05be507"
+      },
+      {
+        "name": "movies",
+        "comment": "",
+        "columns": [
+          {
+            "id": "df350670-0e9b-41f2-9425-ede7f63026e3",
+            "name": "id",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "5c05aee4-b0f8-4468-96dc-b391c02ee27f",
+            "name": "title",
+            "comment": "",
+            "dataType": "TEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "b595f77d-9a98-4a75-bdff-4fcc6a580cba",
+            "name": "",
+            "comment": "",
+            "dataType": "NUMERIC",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 62.66455078125,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 939,
+          "top": 29,
+          "zIndex": 4,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "32ca93f6-9fef-4a94-8f9b-438ec4b7ba39"
+      },
+      {
+        "name": "ratings",
+        "comment": "",
+        "columns": [
+          {
+            "id": "93e37949-eb30-4f91-ac3c-d58d0a8559c2",
+            "name": "movie_id",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "6a5b305b-57e9-4fec-89d4-9806f50639bd",
+            "name": "rating",
+            "comment": "",
+            "dataType": "REAL",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "a499ce47-0a60-4f90-9a94-8959aaba15cf",
+            "name": "votes",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": true,
+          "left": 1386,
+          "top": 208,
+          "zIndex": 5,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "14bece37-890b-4f2d-adeb-cc4a06adc1fa"
+      },
+      {
+        "name": "people",
+        "comment": "",
+        "columns": [
+          {
+            "id": "c85d0355-d839-44d6-9d4e-2eee117e3648",
+            "name": "id",
+            "comment": "",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "30d7200d-f9d2-46c9-9687-cdc9cca077a7",
+            "name": "name",
+            "comment": "",
+            "dataType": "TEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            }
+          },
+          {
+            "id": "7f5633fc-cfae-4c51-9b3d-ba91e8058f63",
+            "name": "birth",
+            "comment": "",
+            "dataType": "NUMERIC",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 62.66455078125,
+              "widthDefault": 60
+            }
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 50,
+          "top": 246.5,
+          "zIndex": 1,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "11c724ea-9a3d-4b67-85cf-c57fc3396858"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "ZeroN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "32ca93f6-9fef-4a94-8f9b-438ec4b7ba39",
+          "columnIds": [
+            "df350670-0e9b-41f2-9425-ede7f63026e3"
+          ],
+          "x": 939,
+          "y": 126.875,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "ff431c49-100d-4a5a-ab48-a378e34c8cc4",
+          "columnIds": [
+            "e981ff1e-7808-4c38-8940-104c0327e293"
+          ],
+          "x": 409,
+          "y": 100,
+          "direction": "right"
+        },
+        "constraintName": "",
+        "visible": true,
+        "id": "a8893e42-e37c-4168-84a3-237d6d1b5bc0"
+      },
+      {
+        "identification": false,
+        "relationshipType": "ZeroN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "11c724ea-9a3d-4b67-85cf-c57fc3396858",
+          "columnIds": [
+            "c85d0355-d839-44d6-9d4e-2eee117e3648"
+          ],
+          "x": 224.832275390625,
+          "y": 246.5,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "ff431c49-100d-4a5a-ab48-a378e34c8cc4",
+          "columnIds": [
+            "dfc5cb77-213b-4f7c-9e2e-a41c807df88e"
+          ],
+          "x": 235.5,
+          "y": 155,
+          "direction": "bottom"
+        },
+        "constraintName": "",
+        "visible": true,
+        "id": "35cc8eb0-4250-4e72-890a-f6645662448b"
+      },
+      {
+        "identification": false,
+        "relationshipType": "ZeroN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "32ca93f6-9fef-4a94-8f9b-438ec4b7ba39",
+          "columnIds": [
+            "df350670-0e9b-41f2-9425-ede7f63026e3"
+          ],
+          "x": 939,
+          "y": 61.625,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "0202743f-0c63-4206-8854-3997a05be507",
+          "columnIds": [
+            "60f95a8b-f5e3-4c34-b4ef-8b9ca843b7c2"
+          ],
+          "x": 856,
+          "y": 312,
+          "direction": "right"
+        },
+        "constraintName": "",
+        "visible": true,
+        "id": "350ef7ec-8734-4945-932d-eb51c79169be"
+      },
+      {
+        "identification": false,
+        "relationshipType": "ZeroN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "11c724ea-9a3d-4b67-85cf-c57fc3396858",
+          "columnIds": [
+            "c85d0355-d839-44d6-9d4e-2eee117e3648"
+          ],
+          "x": 399.66455078125,
+          "y": 311.75,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "0202743f-0c63-4206-8854-3997a05be507",
+          "columnIds": [
+            "529bd3c0-2332-4341-a4ff-3272b74a2a67"
+          ],
+          "x": 509,
+          "y": 312,
+          "direction": "left"
+        },
+        "constraintName": "",
+        "visible": true,
+        "id": "803cb864-213b-447d-8da7-e3c57e756ab6"
+      },
+      {
+        "identification": false,
+        "relationshipType": "ZeroN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "32ca93f6-9fef-4a94-8f9b-438ec4b7ba39",
+          "columnIds": [
+            "df350670-0e9b-41f2-9425-ede7f63026e3"
+          ],
+          "x": 1288.66455078125,
+          "y": 94.25,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "14bece37-890b-4f2d-adeb-cc4a06adc1fa",
+          "columnIds": [
+            "93e37949-eb30-4f91-ac3c-d58d0a8559c2"
+          ],
+          "x": 1386,
+          "y": 273.25,
+          "direction": "left"
+        },
+        "constraintName": "",
+        "visible": true,
+        "id": "0996a393-f918-41d3-8363-25b545c657fb"
+      }
+    ]
+  }
+}

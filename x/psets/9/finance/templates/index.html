@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Symbol</th>
+                <th scope="col">Name</th>
+                <th scope="col">Shares</th>
+                <th scope="col">Current Price</th>
+                <th scope="col">Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in stocks %}
+            {% if row["shares"] > 0%}
+            <tr>
+                    <td>{{ row["symbol"] }}</td>
+                    <td>{{ row["sname"] }}</td>
+                    <td>{{ row["shares"] }}</td>
+                    <td>{{ prices[row["symbol"]] | usd }}</td>
+                    <td>{{ totals[row["symbol"]] | usd }}</td>
+            </tr>
+            {% endif %}
+            {% endfor %}
+            <tr>
+                <td>CASH</td>
+                <td></td>
+                <td></td>
+                <td></th>
+                <td>{{ cash | usd }}</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <th>TOTAL:</th>
+                <td>{{ total| usd }}</td>
+            </tr>
+        </tfoot>
+    </table>
+{% endblock %}

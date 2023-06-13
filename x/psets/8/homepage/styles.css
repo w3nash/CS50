@@ -1,0 +1,111 @@
+@import url("https://use.typekit.net/num4qqg.css");
+
+.navbar-brand {
+    font-family: "nippori", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, h2, h3, h3, h4, h5, h6 {
+    font-family: "sofia-pro", sans-serif;
+    font-weight: 800;
+    font-style: bold;
+}
+
+p {
+    font-family: "sofia-pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+}
+
+.navbar-light a {
+    color: #58a6ff;
+}
+
+.navbar-light a:visited {
+    color: #0366d6 !important;
+}
+
+.navbar-light a:hover {
+    color: #0366d6 !important;
+}
+
+.navbar-light a:active  {
+    color: #0366d6 !important;
+}
+
+.navbar-dark a {
+    color: #58a6ff;
+}
+
+.navbar-dark a:visited {
+    color: #0366d6 !important;
+}
+
+.navbar-dark a:hover {
+    color: #0366d6 !important;
+}
+
+.navbar-dark a:active  {
+    color: #0366d6 !important;
+}
+
+.bg-light {
+    background: #F2F2F2 !important;
+    color: rgb(36, 41, 46);
+}
+
+.bg-dark {
+    background: #161b22 !important;
+    color: rgb(201, 209, 217);
+}
+
+#W3 {
+    color: #EA1889;
+}
+
+#Nash {
+    color: #0079C6;
+}
+
+.nav-link {
+    font-family: "sofia-pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+a.nav-link.active {
+    color: #EA4AAA !important;
+}
+
+#prefer-color {
+    cursor: pointer;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+footer a.btn-floating, main a.btn-floating {
+    color: #F2F2F2;
+}
+
+footer a.btn-floating:hover, main a.btn-floating:hover{
+    background-color: #0366d6;
+    color: #F2F2F2 !important;
+}
+
+
+@media screen and (max-width: 600px) {
+    main {
+      padding: 10px;
+    }
+}
